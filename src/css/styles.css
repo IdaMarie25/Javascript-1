@@ -200,7 +200,7 @@ footer p, a {
 
 input::placeholder {
   color: black;
-  opacity: 0.5;
+  opacity: 0.8;
   font-weight: 200;
   font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -209,18 +209,18 @@ input::placeholder {
 .home-image {
   width: 100%;
   height: 85vh;
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/headerimage.jpg);
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/headerimg.jpg);
   min-height: 70vh;
   background-size: cover;
   background-position-x: right;
-  background-position-y: top;
+  background-position-y: center;
   color: var(--color-background);
   position: relative;
 }
 
 .home-image_text {
   position: absolute;
-  top: 240px;
+  top: 180px;
   left: 75px;
 }
 
@@ -229,9 +229,10 @@ input::placeholder {
   margin: 0;
 }
 
-.home-image p {
+.home-image h2 {
   font-size: 1.6em;
-  margin: 0px 0px 25px 0px
+  margin: 0px 0px 25px 0px;
+  color: white;
 }
 
 .home-image a {
@@ -683,7 +684,7 @@ input::placeholder {
 }
 
 
-.checkout-success_content p {
+.checkout-success_content h2 {
   position: relative;
   max-width: 1000px;
   margin: 10px auto 20px auto;
@@ -866,6 +867,7 @@ input::placeholder {
 
 .checkout_form label {
   margin: 0px 0px -10px;
+  color: black;
 } 
 
 
@@ -988,6 +990,7 @@ input::placeholder {
 
 .contact label {
   margin: 0px 0px -10px;
+  color: black;
 } 
 
 .contact_icons {
