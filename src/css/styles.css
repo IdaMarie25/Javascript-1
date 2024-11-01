@@ -39,6 +39,8 @@ body {
 
 header {
   background-color: white;
+  border-bottom: solid var(--color-tertiary);
+  border-width: 5px;
 }
 
 .header_section {
@@ -235,9 +237,8 @@ input::placeholder {
 /*Home page*/
 .home-image {
   width: 100%;
-  height: 85vh;
+  height: 500px;
   background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/headerimg.jpg);
-  min-height: 70vh;
   background-size: cover;
   background-position-x: right;
   background-position-y: center;
@@ -246,19 +247,19 @@ input::placeholder {
 }
 
 .home-image_text {
-  position: absolute;
+  position: relative;
   top: 180px;
   text-align: center;
-  margin: 20px;
+
 }
 
 .home-image h1 {
-  font-size: 2em;
+  font-size: 25px;
   margin: 0;
 }
 
 .home-image h2 {
-  font-size: 1.6em;
+  font-size: 20px;
   margin: 0px 0px 25px 0px;
   color: white;
 }
@@ -268,7 +269,7 @@ input::placeholder {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.85);
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 15px;
   padding: 5px 40px;
   border-radius: 6px;
 }
@@ -319,6 +320,7 @@ input::placeholder {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .inspiration_content {
@@ -336,7 +338,7 @@ input::placeholder {
 
 .picture_one h2 {
   position: absolute;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   bottom: 20px;
   left: 15px;
@@ -346,7 +348,7 @@ input::placeholder {
 
 .picture_one i {
   position: absolute;
-  font-size: 50px;
+  font-size: 30px;
   color: white;
   bottom: 30px;
   right: 50px;
@@ -361,9 +363,9 @@ input::placeholder {
 
 .picture_two h2 {
   position: absolute;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
-  top: 20px;
+  bottom: 20px;
   left: 15px;
   margin: 0px 150px 0px 0px;
 }
@@ -371,9 +373,9 @@ input::placeholder {
 
 .picture_two i {
   position: absolute;
-  font-size: 50px;
+  font-size: 30px;
   color: white;
-  top: 30px;
+  bottom: 30px;
   right: 50px;
 }
 
@@ -386,7 +388,7 @@ input::placeholder {
 
 .picture_three h2 {
   position: absolute;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   bottom: 20px;
   left: 15px;
@@ -396,7 +398,7 @@ input::placeholder {
 
 .picture_three i {
   position: absolute;
-  font-size: 50px;
+  font-size: 30px;
   color: white;
   bottom: 30px;
   right: 50px;
@@ -900,6 +902,68 @@ input::placeholder {
 
 
 /* About us page*/
+
+
+
+.about_us_page {
+  color: white;
+  font-size: 17px;
+  font-weight: 300;
+  display: grid;
+}
+
+.small_header {
+  color: white;
+  position: relative;
+  margin: 20px 70px 0px;
+}
+
+
+.about_us_text {
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../../assets/images/fourpeople_hiking.jpg);
+  height: fit-content;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  position: relative;
+  margin: 5px 0px;
+  
+}
+
+
+.about_us_text p {
+  margin: 10px 70px 30px;
+}
+
+.our_story_text {
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../../assets/images/hammock.jpg);
+  height: fit-content;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  margin: 5px 0px;
+
+}
+
+.our_story_text p {
+  margin: 10px 70px 30px;
+}
+
+.our_goal_text {
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../../assets/images/mountaintop.jpg);
+  height: fit-content;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  margin: 5px 0px;
+}
+
+.our_goal_text p {
+  margin: 10px 70px 30px;
+}
+
+
+/*
 .about_us_page {
   max-width: 1000px;
   display: grid;
@@ -910,6 +974,7 @@ input::placeholder {
 }
 
 .about_us_page img {
+  display: contents;
   object-fit: cover;
   max-width: 100%;
 }
@@ -920,6 +985,7 @@ input::placeholder {
 }
 
 .about_us_img h1 {
+  display: contents;
   position: relative;
   top: -337px;
   right: -405px;
@@ -941,6 +1007,7 @@ input::placeholder {
 }
 
 .our_story_img h1 {
+  display: contents;
   position: relative;
   color: white;
   text-shadow: 0px 0px 15px black;
@@ -955,6 +1022,7 @@ input::placeholder {
 }
 
 .our_goal_img h1 {
+  display: contents;
   position: relative;
   color: white;
   text-shadow: 0px 0px 15px black;
@@ -963,7 +1031,22 @@ input::placeholder {
 }
 
 
+
+/*
+
+For ipad størrelser 
+
+
+
+
+*/
+
+
+*/
+
+
 /*Contact us*/
+
 .contact {
   background-color: var(--color-secondary-background);
   max-width: 1000px;
@@ -981,13 +1064,12 @@ input::placeholder {
 .contact_form {
   position: relative;
   background-color: white;
-  margin: 0px auto;
+  margin: 30px auto;
   max-width: 1000px;
   display: flex;
   flex-direction: column;
   min-height: fit-content;
-  margin-left: 20px;
-  width: 600px;
+  width: 300px;
 }
 
 .contact_form h1 {
@@ -998,12 +1080,15 @@ input::placeholder {
 
 .contact_form form {
   max-width: 1000px;
-  width: 500px;
+  width: 250px;
   display: flex;
   text-align: left;
   flex-direction: column;
   margin: auto;
 }
+
+
+
 
 
 .contact input, 
@@ -1058,19 +1143,175 @@ form h1, h2 {
     display: none;
 }
 
+/*Contact page*/
+.contact_img {
+  display: none;
+}
 
+.contact {
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/contactus.jpg);
+  margin: 0px;
+  background-size: cover;
+}
+
+
+/*About us*/ 
+  .about_us_page img, 
+  .about_us_page h1 {
+    display: none;
+}
 }
 
 
 
 
-@media (min-width: 601px)  {
-  footer {
-    flex-direction: row;
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  nav a {
+    padding: none;
   }
 
-  .footer_content {
-    margin: 10px 10px;
+  nav li {
+    width: 100px;
+    
+  }
+
+/*Contact page*/
+
+  .contact_img {
+    display: none;
+  }
+  
+  .contact {
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/contactus.jpg);
+    margin: 0px;
+    background-size: cover;
+  }
+
+  /*About us*/
+
+  .about_us_page img, 
+  .about_us_page h1 {
+    display: none;
+  }
+
+  .about_us_text p {
+    margin: 20px 120px;
+  }
+  
+  .our_story_text p {
+    margin: 20px 120px;
+  }
+  
+  .our_goal_text p {
+    margin: 20px 120px;
+  }
+}
+
+
+@media (min-width: 1001px) {
+  nav li {
+    width: 170px;
+  }
+
+
+
+  /*About us*/
+
+  .small_header {
+    display: none;
+  }
+
+
+  .about_us_page {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 333px 333px 333px;
+    margin: 50px auto;
+    gap: 0px 0px;
+    color: var(--color-tertiary);
+    font-size: 15px;
+  }
+
+
+  .about_us_text {
+    background-image: none;
+  }
+
+
+  .about_us_page img {
+    object-fit: cover;
+    max-width: 100%;
+  }
+  
+  .about_us_page p {
+    margin: 0px 5px 15px;
+    line-height: 20px;
+  }
+  
+  .about_us_img h1 {
+    position: relative;
+    top: -332px;
+    right: -410px;
+    color: white;
+    text-shadow: 0px 0px 15px black;
+  }
+  
+  .about_us_text h1 {
+    position: relative;
+    color: var(--color-tertiary);
+    margin: 21px 3px 0px;
+  }
+  
+  .our_story_text {
+    background-image: none;
+  }
+
+  .our_story_text h1 {
+    position: relative;
+    color: var(--color-tertiary);
+    left: 443px;
+    top: -6px;
+    margin: 21px 3px 0px;
+  }
+  
+  .our_story_img h1 {
+    position: relative;
+    color: white;
+    text-shadow: 0px 0px 15px black;
+    top: -337px;
+    right: -5px;
+  }
+  
+  .our_goal_text {
+    background-image: none;
+  }
+
+  .our_goal_text h1 {
+    position: relative;
+    color: var(--color-tertiary);
+    margin: 21px 3px 0px;
+  }
+  
+  .our_goal_img h1 {
+    position: relative;
+    color: white;
+    text-shadow: 0px 0px 15px black;
+    top: -332px;
+    right: -446px;
+  }
+  
+  
+
+}
+  
+
+
+@media (min-width: 601px)  {
+
+  header {
+    border: none;
   }
 
   .header_section {
@@ -1142,34 +1383,112 @@ form h1, h2 {
     background-color: var(--color-background);
     border-radius: 5px;
     text-align: center;
-    width: 200px;
     border-bottom: none;
     
+    
 }
-
-
 
 
 nav a {
   text-decoration: none;
   color: var(--color-tertiary);
   font-weight: 700;
-  padding: 5px 70px;
   border-radius: 5px;
+}
+
+
+footer {
+  flex-direction: row;
+}
+
+.footer_content {
+  margin: 10px 10px;
 }
 
 
  /*Home page*/ 
  
+.home-image {
+  min-height: 70vh;
+
+}
 
  .home-image_text {
+  position: absolute;
   text-align: left;
   left: 75px;
   margin: 0px;
  }
 
+ .home-image h1 {
+  font-size: 35px;
+ }
+
+
+ .home-image h2 {
+  font-size: 25px;
+ }
+
+
+
+ .home-image a {
+  font-size: 20px;
+ }
+
+ .inspiration {
+  flex-direction: row;
+ }
+
+
+
+.picture_one h2 {
+  font-size: 30px;
+
 }
 
+.picture_one i {
+  font-size: 50px;
+  bottom: 30px;
+}
+
+.picture_two h2 {
+  font-size: 30px;
+  top: 20px;
+  
+}
+
+.picture_two i {
+  font-size: 50px;
+  top: 30px;
+}
+
+.picture_three h2 {
+  font-size: 30px;
+ 
+}
+
+.picture_three i {
+  font-size: 50px;
+  bottom: 30px;
+}
+
+
+/*Contact page*/
+
+
+.contact_form {
+  margin: 0px auto;
+  margin: 30px auto;
+  width: 600px;
+}
+
+.contact_form form {
+  width: 500px;
+}
+
+
+
+}
 
 
 
