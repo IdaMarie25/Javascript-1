@@ -205,27 +205,30 @@ main {
 }
 
 
+
 footer {
-  background-color: var(--color-primary);
+  background-color: var(--color-tertiary);
   display: flex;
   justify-content: center;
   flex-direction: column;
   flex: 1;
+  padding: 50px 0px;
 }
 
 .footer_content {
   flex: 1;
-  margin: 10px 50px;
+  margin: 0px 50px;
 }
 
+footer h3, 
 footer a {
   text-decoration: none;
-  color: var(--color-tertiary);
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  border-bottom: solid;
 }
 
-footer p, a {
-  font-weight: 300;
-}
 
 input::placeholder {
   color: black;
@@ -238,7 +241,7 @@ input::placeholder {
 .home-image {
   width: 100%;
   height: 500px;
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/threepeople_hiking.jpg);
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/headerimg.jpg);
   background-size: cover;
   background-position-x: right;
   background-position-y: center;
@@ -694,12 +697,11 @@ input::placeholder {
   position: relative;
   max-width: 1000px;
   margin: auto;
-  top: 30px;
+  top: 50px;
   color: var(--color-tertiary);
-  padding: 50px;
+  padding: 40px;
   text-align: center;
-  background-color: white;
-  border-radius: 10px;  
+  background-color: white;  
   
 }
 
@@ -708,9 +710,8 @@ input::placeholder {
   max-width: 1000px;
   margin: 10px auto;
   text-align: center;
-  width: 450px;
-  font-weight: 200;
-  font-size: 30px;
+  font-weight: 300;
+  font-size: 23px;
 }
 
 
@@ -719,14 +720,20 @@ input::placeholder {
   max-width: 1000px;
   margin: 10px auto 20px auto;
   text-align: center;
-  width: 450px;
-  font-weight: 200;
-  font-size: 25px;
+  font-weight: 300;
+  font-size: 17px;
+  color: var(--color-tertiary);
 }
 
+
 .checkout-success_content i {
-  font-size: 100px;
+  font-size: 50px;
 }
+
+.checkout-success_content a {
+  font-size: 20px;
+}
+
 
 
 /*Check-out*/
@@ -963,88 +970,6 @@ input::placeholder {
 }
 
 
-/*
-.about_us_page {
-  max-width: 1000px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 333px 333px 333px;
-  margin: 50px auto;
-  gap: 0px 0px;
-}
-
-.about_us_page img {
-  display: contents;
-  object-fit: cover;
-  max-width: 100%;
-}
-
-.about_us_page p {
-  margin: 0px 5px 15px;
-  line-height: 20px;
-}
-
-.about_us_img h1 {
-  display: contents;
-  position: relative;
-  top: -337px;
-  right: -405px;
-  color: white;
-  text-shadow: 0px 0px 15px black;
-}
-
-.about_us_text h1 {
-  position: relative;
-  color: var(--color-tertiary);
-  margin: 21px 3px 0px;
-}
-
-.our_story_text h1 {
-  position: relative;
-  color: var(--color-tertiary);
-  left: 440px;
-  margin: 21px 3px 0px;
-}
-
-.our_story_img h1 {
-  display: contents;
-  position: relative;
-  color: white;
-  text-shadow: 0px 0px 15px black;
-  top: -337px;
-  right: -5px;
-}
-
-.our_goal_text h1 {
-  position: relative;
-  color: var(--color-tertiary);
-  margin: 21px 3px 0px;
-}
-
-.our_goal_img h1 {
-  display: contents;
-  position: relative;
-  color: white;
-  text-shadow: 0px 0px 15px black;
-  top: -337px;
-  right: -440px;
-}
-
-
-
-/*
-
-For ipad størrelser 
-
-
-
-
-*/
-
-
-*/
-
-
 /*Contact us*/
 
 .contact {
@@ -1143,6 +1068,10 @@ form h1, h2 {
     display: none;
 }
 
+footer p {
+  display: none;
+}
+
 /*Contact page*/
 .contact_img {
   display: none;
@@ -1160,6 +1089,8 @@ form h1, h2 {
   .about_us_page h1 {
     display: none;
 }
+
+
 }
 
 
@@ -1208,104 +1139,6 @@ form h1, h2 {
   }
 }
 
-
-@media (min-width: 1001px) {
-  nav li {
-    width: 170px;
-  }
-
-
-
-  /*About us*/
-
-  .small_header {
-    display: none;
-  }
-
-
-  .about_us_page {
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 333px 333px 333px;
-    margin: 50px auto;
-    gap: 0px 0px;
-    color: var(--color-tertiary);
-    font-size: 15px;
-  }
-
-
-  .about_us_text {
-    background-image: none;
-  }
-
-
-  .about_us_page img {
-    object-fit: cover;
-    max-width: 100%;
-  }
-  
-  .about_us_page p {
-    margin: 0px 5px 15px;
-    line-height: 20px;
-  }
-  
-  .about_us_img h1 {
-    position: relative;
-    top: -332px;
-    right: -410px;
-    color: white;
-    text-shadow: 0px 0px 15px black;
-  }
-  
-  .about_us_text h1 {
-    position: relative;
-    color: var(--color-tertiary);
-    margin: 21px 3px 0px;
-  }
-  
-  .our_story_text {
-    background-image: none;
-  }
-
-  .our_story_text h1 {
-    position: relative;
-    color: var(--color-tertiary);
-    left: 443px;
-    top: -6px;
-    margin: 21px 3px 0px;
-  }
-  
-  .our_story_img h1 {
-    position: relative;
-    color: white;
-    text-shadow: 0px 0px 15px black;
-    top: -337px;
-    right: -5px;
-  }
-  
-  .our_goal_text {
-    background-image: none;
-  }
-
-  .our_goal_text h1 {
-    position: relative;
-    color: var(--color-tertiary);
-    margin: 21px 3px 0px;
-  }
-  
-  .our_goal_img h1 {
-    position: relative;
-    color: white;
-    text-shadow: 0px 0px 15px black;
-    top: -332px;
-    right: -446px;
-  }
-  
-  
-
-}
-  
 
 
 @media (min-width: 601px)  {
@@ -1397,20 +1230,35 @@ nav a {
 }
 
 
+
 footer {
+  background-color: var(--color-primary);
+  padding: none;
   flex-direction: row;
 }
 
 .footer_content {
+  flex: 1;
   margin: 10px 10px;
 }
+
+footer h3, 
+footer p, 
+footer a {
+  color: var(--color-tertiary);
+  border-bottom: none
+}
+
+footer p, a {
+  font-weight: 300;
+}
+
 
 
  /*Home page*/ 
  
 .home-image {
-  min-height: 70vh;
-
+  min-height: 700px;
 }
 
  .home-image_text {
@@ -1487,12 +1335,171 @@ footer {
 }
 
 
+/*Checkout success*/
+
+.checkout-success_content h1 {
+  font-size: 25px;
+}
+
+
+.checkout-success_content h2 {
+  font-size: 20px;
+}
 
 }
 
 
 
 
+@media (min-width: 1001px) {
+  nav li {
+    width: 170px;
+  }
+
+
+  .footer_content {
+ 
+      margin: 10px 50px;
+    }
+
+
+
+  /*About us*/
+
+  .small_header {
+    display: none;
+  }
+
+
+  .about_us_page {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 333px 333px 333px;
+    margin: 50px auto;
+    gap: 0px 0px;
+    color: var(--color-tertiary);
+    font-size: 15px;
+  }
+
+
+  .about_us_text {
+    background-image: none;
+  }
+
+
+  .about_us_page img {
+    object-fit: cover;
+    max-width: 100%;
+  }
+  
+  .about_us_page p {
+    margin: 0px 5px 15px;
+    line-height: 20px;
+  }
+  
+  .about_us_img h1 {
+    position: relative;
+    top: -332px;
+    right: -410px;
+    color: white;
+    text-shadow: 0px 0px 15px black;
+  }
+  
+  .about_us_text h1 {
+    position: relative;
+    color: var(--color-tertiary);
+    margin: 21px 3px 0px;
+  }
+  
+  .our_story_text {
+    background-image: none;
+  }
+
+  .our_story_text h1 {
+    position: relative;
+    color: var(--color-tertiary);
+    left: 443px;
+    top: -6px;
+    margin: 21px 3px 0px;
+  }
+  
+  .our_story_img h1 {
+    position: relative;
+    color: white;
+    text-shadow: 0px 0px 15px black;
+    top: -337px;
+    right: -5px;
+  }
+  
+  .our_goal_text {
+    background-image: none;
+  }
+
+  .our_goal_text h1 {
+    position: relative;
+    color: var(--color-tertiary);
+    margin: 21px 3px 0px;
+  }
+  
+  .our_goal_img h1 {
+    position: relative;
+    color: white;
+    text-shadow: 0px 0px 15px black;
+    top: -332px;
+    right: -446px;
+  }
+  
+  /*Contact us */
+
+  .contact {
+    display: flex;
+
+  }
+
+  .contact_img {
+    flex: 1;
+    margin: auto;
+  }
+
+  .contact img {
+    width: 450px;
+    object-fit: cover;
+  }
+
+  .contact_form {
+    flex: 1;
+  }
+
+  .contact_form form {
+    width: 400px;
+  }
+
+/*Checkout success*/
+
+.checkout-success_content {
+  padding: 50px;
+  border-radius: 10px;  
+   
+ }
+ 
+ .checkout-success_content h1 {
+   width: 450px;
+ }
+ 
+ 
+ .checkout-success_content h2 {
+  width: 450px;
+  font-size: 25px;
+ }
+ 
+ .checkout-success_content i {
+  font-size: 60px;
+ }
+ 
+
+}
+  
 
 /*
 Media query 
