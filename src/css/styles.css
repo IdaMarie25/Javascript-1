@@ -715,7 +715,7 @@ input::placeholder {
 
 /*Check-out*/
 .checkout {
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/snowypeaks.jpg);
+  background-image: url(../../assets/images/checkout_image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
