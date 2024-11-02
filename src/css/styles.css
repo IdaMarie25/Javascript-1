@@ -713,6 +713,196 @@ input::placeholder {
 
 
 
+/*Check-out*/
+.checkout {
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/snowypeaks.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--color-tertiary);
+  position: relative;
+  height: fit-content;
+}
+
+.checkout h1 {
+  max-width: 1000px;
+  font-size: 25px;
+  color: white;
+  margin: 0 20px;
+  position: relative;
+  top: 30px;
+
+}
+
+
+.checkout_content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 100px;
+  max-width: 1000px;
+  display: grid;
+  top: 50px;
+  grid-template-columns: 2fr 3fr 1fr;
+	min-height: fit-content;
+}
+
+
+.content_1 img {
+  height: 100px;
+  margin: 40px 20px;
+
+}
+
+
+.content_2 div {
+  margin: 20px 0px;
+
+}
+
+.content_2 h2 {
+  font-size: 15px;
+}
+
+
+.content_2 h3 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 10px;
+    margin: -10px 0px;
+}
+
+.content_2 p {
+  font-size: 10px;
+  margin: 5px;
+}
+
+.content_3 {
+  position: relative;
+}
+
+.content_3 i {
+  font-size: 20px;
+  flex: 1;
+  float: right;
+  margin: 20px;
+}
+
+.content_3 p {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 110px 0px 0px;
+}
+
+.content_4 {
+  grid-column: -1/1;
+  margin: 0px 20px;
+  display: flex;
+  border-top: solid;
+  border-bottom: solid;
+  border-color: var(--color-primary);
+}
+
+.content_4 p {
+  text-decoration: underline;
+  font-size: 10px;
+}
+
+.content_4 i {
+  font-size: 10px;
+  margin: 10px 5px;
+}
+
+
+.content_5 {
+  grid-column: -1/1;
+  display: flex;
+}
+
+.content_5_total {
+  margin: 10px 20px;
+  flex: 1;
+  font-size: 15px;
+}
+
+.content_5_price {
+  margin: 10px 20px;
+  flex: 1;
+  text-align: end;
+  font-size: 15px;
+}
+
+.checkout_content h2 {
+  color: var(--color-tertiary);
+}
+
+
+
+.checkout_form {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  margin-top: 180px;
+  max-width: 1000px;
+  display: flex;
+  bottom: 80px;
+  flex-direction: column;
+  min-height: fit-content;
+
+}
+
+.checkout_form h2 {
+  color: var(--color-tertiary);
+  max-width: 1000px;
+  margin: 20px auto 0px;
+  font-size: 20px;
+}
+
+.form_1 {
+  max-width: 1000px;
+  width: 300px;
+  margin: 0px auto 20px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+.form_1 h3 {
+  font-size: 15px;
+}
+
+.form_2 {
+  max-width: 1000px;
+  width: 300px;
+  margin: 20px auto;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+.form_2 a {
+  margin: 10px 10px 50px;
+  font-size: 17px;
+  
+}
+
+
+.checkout_form input, 
+.checkout_form textarea {
+  margin: 15px 0px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.checkout_form label {
+  margin: 0px 0px -10px;
+  color: black;
+  font-size: 12px;
+} 
+
+
+
 /*Checkout success page*/
 .checkout-success {
   background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/mountaintop.jpg);
@@ -766,179 +956,6 @@ input::placeholder {
 .checkout-success_content a {
   font-size: 20px;
 }
-
-
-
-/*Check-out*/
-.checkout {
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/snowypeaks.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  color: var(--color-tertiary);
-  position: relative;
-  height: fit-content;
-}
-
-.checkout h1 {
-  max-width: 1000px;
-  font-size: 30px;
-  color: white;
-  margin: 0 auto;
-  position: relative;
-  top: 30px;
-
-}
-
-.checkout_content {
-  position: relative;
-  background-color: white;
-  margin: auto;
-  margin-bottom: 100px;
-  max-width: 1000px;
-  display: grid;
-  top: 50px;
-  grid-template-columns: 2fr 3fr 1fr;
-  grid-template-rows: 5fr 1fr 1fr;
-	min-height: fit-content;
-}
-
-
-.content_1 img {
-  height: 300px;
-  margin: 20px;
-
-}
-
-
-.content_2 div {
-  margin: 60px 0px;
-
-}
-
-.content_2 h3 {
-    font-weight: 300;
-    font-style: italic;
-    font-size: 15px;
-    margin: -10px 0px;
-}
-
-.content_3 {
-  position: relative;
-}
-
-.content_3 i {
-  font-size: 30px;
-  flex: 1;
-  float: right;
-  margin: 20px;
-}
-
-.content_3 p {
-  font-size: 25px;
-  float: right;
-  font-weight: 700;
-  margin: 300px -45px 20px 0px;
-}
-
-.content_4 {
-  grid-column: -1/1;
-  margin: 0px 20px;
-  display: flex;
-  border-top: solid;
-  border-bottom: solid;
-  border-color: var(--color-primary);
-}
-
-.content_4 p {
-  text-decoration: underline;
-}
-
-.content_4 i {
-  font-size: 20px;
-  margin: 15px 10px;
-}
-
-
-.content_5 {
-  grid-column: -1/1;
-  display: flex;
-}
-
-.content_5_total {
-  margin: 20px;
-  flex: 1;
-}
-
-.content_5_price {
-  margin: 20px;
-  flex: 1;
-  text-align: end;
-}
-
-.checkout_content h2 {
-  color: var(--color-tertiary);
-}
-
-
-
-.checkout_form {
-  position: relative;
-  background-color: white;
-  margin: auto;
-  margin-top: 180px;
-  max-width: 1000px;
-  display: flex;
-  bottom: 80px;
-  flex-direction: column;
-  min-height: fit-content;
-
-}
-
-.checkout_form h2 {
-  color: var(--color-tertiary);
-  max-width: 1000px;
-  margin: 20px auto;
-}
-
-.form_1 {
-  max-width: 1000px;
-  width: 600px;
-  margin: 20px auto;
-  display: flex;
-  text-align: left;
-  flex-direction: column;
-}
-
-
-
-.form_2 {
-  max-width: 1000px;
-  width: 600px;
-  margin: 20px auto;
-  display: flex;
-  text-align: left;
-  flex-direction: column;
-}
-
-.form_2 a {
-  margin: 10px 50px 50px 50px;
-  
-}
-
-
-.checkout_form input, 
-.checkout_form textarea {
-  margin: 15px 0px;
-  padding: 17px 10px;
-  font-size: 16px;
-} 
-
-.checkout_form label {
-  margin: 0px 0px -10px;
-  color: black;
-} 
 
 
 /* About us page*/
@@ -1221,6 +1238,21 @@ footer p {
   .our_goal_text p {
     margin: 20px 120px;
   }
+
+  /*Checkout*/
+
+  .checkout h1 {
+    margin: 0px 20px;
+  }
+
+  .checkout_content {
+    margin: 20px;
+  }
+
+  .checkout_form {
+    margin: 180px 20px 0px;
+  }
+
 }
 
 
@@ -1418,6 +1450,108 @@ footer p, a {
 }
 
 
+
+/*Checkout*/
+
+.checkout h1 {
+  font-size: 30px;
+}
+
+.checkout_content {
+  grid-template-rows: 5fr 1fr 1fr;
+}
+
+.content_1 img {
+    height: 300px;
+    margin: 20px;
+}
+
+.content_2 h2 {
+  font-size: 20px;
+}
+
+.content_2 h3 {
+    font-size: 15px;
+}
+
+.content_2 p {
+  font-size: 17px;
+}
+
+.content_2 div {
+    margin: 60px 0px;
+}
+
+.content_3 p {
+    float: right;
+    margin: 300px -45px 20px 0px;
+}
+
+.content_3 i {
+    font-size: 30px;
+
+}
+
+.content_4 p {
+    font-size: 15px;
+}
+
+.content_4 i {
+    font-size: 20px;
+    margin: 15px 10px;
+}
+
+.content_5_total {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.content_5_price {
+    margin: 20px;
+    font-size: 20px;
+
+}
+
+
+.checkout_form h2 {
+  font-size: 25px;
+  margin: 20px auto;
+}
+
+.form_1 {
+  width: 500px;
+  margin: 20px auto;
+}
+
+
+.form_1 h3 {
+  font-size: 20px;
+}
+
+.form_2 {
+    width: 500px;
+}
+
+.form_2 a {
+  margin: 10px 50px 50px;
+  font-size: 25px;
+  font-weight: 400;
+  
+}
+
+.checkout_form input, 
+.checkout_form textarea {
+  padding: 17px 10px;
+  font-size: 16px;
+} 
+
+
+.checkout_form label {
+  font-size: 17px;
+} 
+
+
+
 /*Checkout success*/
 
 .checkout-success_content h1 {
@@ -1440,8 +1574,6 @@ footer p, a {
 .jacket img {
   height: 80%;
 }
-
-
 
 }
 
@@ -1684,6 +1816,25 @@ footer p, a {
   .contact_form form {
     width: 400px;
   }
+
+/*Checkout*/
+
+.checkout h1 {
+  margin: 0 auto;
+}
+
+.checkout_content {
+  margin: 0px auto;
+}
+
+.form_1 {
+  width: 600px;
+}
+
+.form_2 {
+    width: 600px;
+}
+
 
 /*Checkout success*/
 
