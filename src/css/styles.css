@@ -154,6 +154,8 @@ nav li {
 }
 
 
+
+
 nav ul {
   padding-inline-start: 0px;
 }
@@ -217,16 +219,17 @@ footer {
 
 .footer_content {
   flex: 1;
-  margin: 0px 50px;
+  margin: 0px 20px;
 }
 
 footer h3, 
 footer a {
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 20px;
   color: white;
   border-bottom: solid;
+  margin-bottom: 5px;
 }
 
 
@@ -341,7 +344,7 @@ input::placeholder {
 
 .picture_one h2 {
   position: absolute;
-  font-size: 20px;
+  font-size: 25px;
   color: white;
   bottom: 20px;
   left: 15px;
@@ -351,7 +354,7 @@ input::placeholder {
 
 .picture_one i {
   position: absolute;
-  font-size: 30px;
+  font-size: 40px;
   color: white;
   bottom: 30px;
   right: 50px;
@@ -366,7 +369,7 @@ input::placeholder {
 
 .picture_two h2 {
   position: absolute;
-  font-size: 20px;
+  font-size: 25px;
   color: white;
   bottom: 20px;
   left: 15px;
@@ -376,7 +379,7 @@ input::placeholder {
 
 .picture_two i {
   position: absolute;
-  font-size: 30px;
+  font-size: 40px;
   color: white;
   bottom: 30px;
   right: 50px;
@@ -391,7 +394,7 @@ input::placeholder {
 
 .picture_three h2 {
   position: absolute;
-  font-size: 20px;
+  font-size: 25px;
   color: white;
   bottom: 20px;
   left: 15px;
@@ -401,7 +404,7 @@ input::placeholder {
 
 .picture_three i {
   position: absolute;
-  font-size: 30px;
+  font-size: 40px;
   color: white;
   bottom: 30px;
   right: 50px;
@@ -409,16 +412,23 @@ input::placeholder {
 
 
 /*List of jackets*/
+
+.h1_jacket {
+  max-width: 1000px;
+  margin: 10px auto 0px;
+  padding: 20px;
+  font-size: 20px;
+}
+
 .jacket_text {
   max-width: 1000px;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   padding-left: 20px;
-  padding-right: 600px;
   gap: 5px;
-
+  display: flex;
+  align-items: end;
 }
+
 
 .jacket_text h1 {
   grid-column: -1/1;
@@ -429,11 +439,12 @@ input::placeholder {
 .jacket_text button {
   background-color: white;
   color: var(--color-tertiary);
-  padding: 5px 40px;
+  padding: 5px 20px;
   border: solid 1px;
   border-color: var(--color-tertiary);
   border-radius: 5px;
   cursor: pointer;
+  font-size: 12px;
 }
 
 .jacket_size .jacket_size_content {
@@ -475,72 +486,85 @@ input::placeholder {
   display: block;
 }
 
-
 .jacket_text a {
   display: block;
   color: var(--color-tertiary);
   text-decoration: none;
   padding: 5px;
 }
+
 .jacket_list {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: 1fr 1fr;
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 10px auto;
   gap: 10px;
   padding-left: 20px;
   padding-right: 20px;
 
 }
 
+.jacket_list a {
+  text-decoration: none;
+  color: var(--color-tertiary);
+}
+
 .jacket {
   display: grid;
-  grid-template-rows: 300px 60px 40px 40px 40px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 180px 20px 20px 40px 40px;
+  grid-template-columns: 5fr 1fr;
   align-items: center;
   background-color: white;
-  padding: 20px;
+  height: 300px;
+  min-width: fit-content;
 }
 
 
 .jacket img {
   margin: auto;
-  width: auto;
-  height: 300px;
+  height: 100%;
   object-fit: cover;
   grid-column: -1 / 1;
-  
+  padding: 10px;
 }
 
 .jacket a {
   grid-column: -1/1;
   margin: auto;
+
 }
 
-.jacket h2, 
-.jacket p {
+.jacket h2 {
   grid-column: 1;
   color: var(--color-tertiary);
+  font-size: 12px;
+  margin-left: 5px;
 }
 
 .jacket h3 {
   font-weight: 300;
   color: var(--color-tertiary);
   margin: 0;
-  font-size: 15px;
+  font-size: 10px;
   grid-column: -1 / 1;
+  margin-left: 5px;
 }
 
 .jacket p {
   font-weight: 700;
   font-size: 20px;
+  grid-column: 1;
+  color: var(--color-tertiary);
+  margin-left: 5px;
 }
+
 
 .jacket i {
   grid-row: 2;
   grid-column: 2;
-  font-size: 30px;
-  margin-left: 100px;
+  font-size: 22px;
+  margin: 10px;
+
 }
 
 .in_stock {
@@ -548,6 +572,7 @@ input::placeholder {
   grid-column: 1;
   position: relative;
   display: flex;
+  margin-left: 5px;
 }
 
 .in_stock i {
@@ -570,22 +595,28 @@ input::placeholder {
 .product_specific {
   display: flex;
   max-width: 1000px;
-  margin: 50px auto;
+  margin: auto;
+  flex-direction: column;
 }
 
 .product_specific > * {
   flex: 1;
 }
 
+.product_specific_image {
+  margin: 20px;
+}
+
 .product_specific_details {
-  padding: 20px 80px;
+  padding: 20px 30px;
   background-color: white;
-  margin-left: 50px;
+  margin: 0px 20px 30px;
 }
 
 .product_specific_details h1 {
   font-weight: 700;
   font-size: 30px;
+  margin-bottom: 5px;
 }
 
 
@@ -604,7 +635,7 @@ input::placeholder {
 }
 
 .product_specific_details i {
-  font-size: 30px;
+  font-size: 20px;
   margin: 3px;
 }
 
@@ -640,11 +671,8 @@ input::placeholder {
   color: rgba(163, 155, 155, 1);
 }
 
-
-
 .product_image {
   width: 100%;
-
 }
 
 .product_thumbnails {
@@ -661,7 +689,8 @@ input::placeholder {
   background-color: transparent;
   font-size: 25px;
   text-decoration: none;
-  padding: 8px 100px;
+  padding: 8px;
+  width: 250px;
   border-radius: 8px;
   border-style: solid;
   border-width: 2px;
@@ -675,10 +704,14 @@ input::placeholder {
   color: var(--color-tertiary);
   font-size: 25px;
   text-decoration: none;
-  padding: 10px 112px;
+  padding: 10px;
+  width: 250px;
   border-radius: 8px;
   border: none;
 }
+
+
+
 
 /*Checkout success page*/
 .checkout-success {
@@ -1104,8 +1137,59 @@ footer p {
 
   nav li {
     width: 100px;
+    margin: 0px 5px;
     
   }
+
+
+/*Home page*/  
+
+.inspiration {
+  height: 40vh; 
+}
+
+.picture_one h2 {
+  font-size: 25px;
+}
+
+.picture_two h2 {
+  font-size: 25px;
+}
+
+.picture_three h2 {
+  font-size: 25px;
+}
+
+/*Jackets */
+.jacket_list {
+  margin: 10px 70px;
+}
+
+.h1_jacket { 
+  margin: 10px 70px;
+}
+
+.jacket_text {
+  margin: 10px 70px;
+}
+
+/*Jacket specific*/
+
+.product_specific_image {
+  margin: 20px 70px;
+}
+
+.product_specific_details {
+  margin: 0px 70px 30px;
+}
+
+.cta-button_size {
+  width: 500px;
+}
+
+.cta-button_cart {
+  width: 500px;
+}
 
 /*Contact page*/
 
@@ -1242,16 +1326,23 @@ footer {
   margin: 10px 10px;
 }
 
+footer a {
+  font-weight: 700;
+}
+
 footer h3, 
 footer p, 
 footer a {
   color: var(--color-tertiary);
-  border-bottom: none
+  border-bottom: none;
+  font-weight: 700;
+  
 }
 
 footer p, a {
   font-weight: 300;
 }
+
 
 
 
@@ -1288,6 +1379,111 @@ footer p, a {
  }
 
 
+.picture_one h2 {
+  font-size: 25px;
+}
+
+ .picture_two h2 {
+  font-size: 25px;
+  top: 20px;
+  
+}
+
+.picture_two i {
+  top: 30px;
+}
+
+.picture_two h2 {
+  font-size: 25px;
+}
+
+/*Jackets*/
+
+.h1_jacket { 
+  padding: 20px 0px 0px 20px
+}
+
+
+/*Contact page*/
+
+
+.contact_form {
+  margin: 0px auto;
+  margin: 30px auto;
+  width: 600px;
+}
+
+.contact_form form {
+  width: 500px;
+}
+
+
+/*Checkout success*/
+
+.checkout-success_content h1 {
+  font-size: 25px;
+}
+
+
+.checkout-success_content h2 {
+  font-size: 20px;
+}
+
+
+/*Jackets*/
+
+.jacket_list {
+  grid-template-columns: repeat(3,1fr);
+}
+
+
+.jacket img {
+  height: 80%;
+}
+
+
+
+}
+
+
+@media (min-width: 800px) {
+  .jacket img {
+    height: 100%;
+  }
+
+  .jacket h2 {
+    font-size: 15px;
+  }
+
+  .jacket h3 {
+    font-size: 12px;
+  }
+  
+
+
+}
+
+
+@media (min-width: 1001px) {
+  nav li {
+    margin: 0px 10px;
+    width: 170px;
+  }
+
+  nav a {
+    padding: 5px 50px;
+  }
+
+  .footer_content {
+      margin: 10px 50px;
+    }
+
+    footer {
+      padding: 0px 20px;
+    }
+
+
+/*Home page*/
 
 .picture_one h2 {
   font-size: 30px;
@@ -1321,48 +1517,62 @@ footer p, a {
 }
 
 
-/*Contact page*/
+/*Jacket page */
 
-
-.contact_form {
-  margin: 0px auto;
-  margin: 30px auto;
-  width: 600px;
+.jacket {
+  grid-template-rows: 180px 30px 30px 40px 10px;
+  padding: 0px 20px;
+  height: 310px;
 }
 
-.contact_form form {
-  width: 500px;
+.jacket_list {
+  margin: 10px auto;
 }
 
-
-/*Checkout success*/
-
-.checkout-success_content h1 {
-  font-size: 25px;
+.h1_jacket { 
+  margin: 10px auto;
+  padding: 20px 0px 0px 20px
 }
 
+.jacket_text {
+  margin: 10px auto;
+}
 
-.checkout-success_content h2 {
+.jacket_text button {
+  padding: 5px 40px;
+}
+
+.jacket h2 {
   font-size: 20px;
 }
 
+.jacket h3 {
+  font-size: 15px;
 }
 
+/*Jacket specific*/
 
+.product_specific {
+  flex-direction: row;
+  margin: 50px auto;
+}
 
+.product_specific_details {
+  padding: 20px 80px;
+  margin: 0px 20px;
+}
 
-@media (min-width: 1001px) {
-  nav li {
-    width: 170px;
-  }
+.product_specific_image {
+  margin: 0px;
+}
 
+.product_specific_details h1 {
+  margin-bottom: auto;
+}
 
-  .footer_content {
- 
-      margin: 10px 50px;
-    }
-
-
+.product_specific_details i {
+  font-size: 30px;
+}
 
   /*About us*/
 
