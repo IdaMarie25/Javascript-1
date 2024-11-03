@@ -94,23 +94,23 @@
             <form class="form_1">
                 <h3>Your info</h3>
                 <label for="name">Your name</label>
-                <input type="text" id="name" name="name" placeholder="Name Lastname" required/>
+                <input type="text" id="name" name="name" title="Enter your full name" placeholder="Name Lastname" required/>
                 <label for="email">Email Adress</label>
-                <input type="email" id="email" name="email" placeholder="email@email.com" required/>
+                <input type="email" id="email" name="email" title="Enter your email address" placeholder="email@email.com" required/>
                 <label for="adress">Street Adress</label>
-                <input type="text" id="adress" name="adress" placeholder="Street Adress 123" required/>
+                <input type="text" id="adress" name="adress" title="Enter your street adress" placeholder="Street Adress 123" required/>
                 <label for="city">City</label>
-                <input type="textarea" id="city" name="city" placeholder="City" required/>
+                <input type="textarea" id="city" name="city" title="Enter your city´s name" placeholder="City" required/>
             </form>
             <form action="checkoutsuccess.html" class="form_2">
                 <h3>Payment info</h3>
                 <label for="ccnumber">Credit card number</label>
-                <input type="text" id="ccnumber" name="ccnumber" min="15" max="15" placeholder="1111-2222-3333-4444" required/>
+                <input type="text" id="ccnumber" name="ccnumber" title="Enter your creditcard number" min="15" max="15" placeholder="1111-2222-3333-4444" required/>
                 <label for="safetydigits">CVV</label>
-                <input type="number" id="safetydigits" name="safetydigits" min="3" max="3" placeholder="123" required/>
-                <label for="experationsdate">Experation date</label>
-                <input type="number" id="experationsdate" name="experationsdate" min="4" max="4" placeholder="12/24" required/>
-                <a href="checkoutsuccess.html" class="cta-button">Pay the order</a>
+                <input type="number" id="safetydigits" name="safetydigits"  title="Enter your three safety digits" min="100" max="999" placeholder="123" required/>
+                <label for="expirationdate">Expiration date</label>
+                <input type="number" id="expirationdate" name="expirationdate"  title="Enter your expiration date by month and year" min="1000" max="1299" placeholder="12/24" required/>
+                <a href="checkoutsuccess.html"><button class="cta-button">Pay the order</button></a>
             </form>
         </section>
       </main>

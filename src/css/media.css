@@ -28,7 +28,7 @@
 
 @media (min-width: 601px) and (max-width: 1000px) {
   nav a {
-    padding: none;
+    padding: 5px 20px;
   }
 
   nav li {

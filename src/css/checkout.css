@@ -224,6 +224,7 @@
   
   .checkout-success_content a {
     font-size: var(--medium_large);
+    text-decoration: none;
   }
   
   

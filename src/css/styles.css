@@ -165,11 +165,11 @@ main {
 .cta-button {
   background-color: var(--color-secondary);
   color: var(--color-tertiary);
-  font-size: 1.5em;
-  text-decoration: none;
-  padding: 5px 60px;
+  font-size: 25px;
+  padding: 8px;
   border-radius: 5px;
-  text-align: center;
+  border: none;
+  width: 100%;
 }
 
 footer {
