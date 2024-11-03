@@ -1,0 +1,68 @@
+/*Contact us*/
+
+.contact {
+    background-color: var(--color-secondary-background);
+    max-width: 1000px;
+    display: flex;
+    margin: 50px auto;
+  }
+  
+  .contact img {
+    height: 515px;
+    max-width: 400px;
+    object-fit: cover;
+  }
+  
+  .contact_form {
+    position: relative;
+    background-color: white;
+    margin: 30px auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    width: 300px;
+  }
+  
+  .contact_form h1 {
+    text-align: left;
+    margin-left: 40px;
+  }
+  
+  .contact_form form {
+    max-width: 1000px;
+    width: 250px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .contact input, 
+  .contact textarea {
+    margin: 15px 0px;
+    padding: 17px 10px;
+  } 
+  
+  .cta-button_contact {
+    font-size: var(--medium_large);
+  }
+  
+  .contact label {
+    margin: 0px 0px -10px;
+    color: black;
+  } 
+  
+  .contact_icons {
+    max-width: 1000px;
+    display: flex;
+    margin: auto;
+  }
+  
+  .contact_icons a {
+    flex: 1;
+    font-size: 40px;
+    color: var(--color-tertiary);
+    margin: 10px;
+  }
+  

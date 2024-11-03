@@ -1,0 +1,52 @@
+/* About us page*/
+
+  .about_us_page {
+    color: white;
+    font-size: var(--medium);
+    font-weight: 300;
+    display: grid;
+  }
+  
+  .small_header {
+    color: white;
+    position: relative;
+    margin: 20px 70px 0px;
+  }
+   
+  .about_us_text {
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../../assets/images/fourpeople_hiking.jpg);
+    height: fit-content;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 5px 0px;
+  }
+  
+  .about_us_text p {
+    margin: 10px 70px 30px;
+  }
+  
+  .our_story_text {
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../../assets/images/hammock.jpg);
+    height: fit-content;
+    background-size: cover;
+    background-position: center;
+    margin: 5px 0px;
+  }
+  
+  .our_story_text p {
+    margin: 10px 70px 30px;
+  }
+  
+  .our_goal_text {
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../../assets/images/mountaintop.jpg);
+    height: fit-content;
+    background-size: cover;
+    background-position: center;
+    margin: 5px 0px;
+  }
+  
+  .our_goal_text p {
+    margin: 10px 70px 30px;
+  }
+  

@@ -1,0 +1,664 @@
+/*Media queries*/
+
+@media (max-width: 600px) {
+  .logo {
+    display: none;
+    }
+  footer p {
+    display: none;
+  }
+
+/*Contact us*/
+  .contact_img {
+    display: none;
+  }
+
+  .contact {
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/contactus.jpg);
+    margin: 0px;
+    background-size: cover;
+  }
+
+/*About us*/ 
+  .about_us_page img, 
+  .about_us_page h1 {
+        display: none;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  nav a {
+    padding: none;
+  }
+
+  nav li {
+    width: 100px;
+    margin: 0px 5px;
+  }
+
+/*Home page*/  
+  .inspiration {
+    height: 40vh; 
+  }
+
+  .picture_one h2 {
+    font-size: var(--large);
+  }
+
+  .picture_two h2 {
+    font-size: var(--large);
+  }
+
+  .picture_three h2 {
+    font-size: var(--large);
+  }
+
+/*List of jackets*/
+  .jacket_list {
+    margin: 10px 70px;
+  }
+
+  .h1_jacket { 
+    margin: 10px 70px;
+  }
+
+  .jacket_text {
+    margin: 10px 70px;
+  }
+
+/*Jacket specific page*/
+  .product_specific_image {
+    margin: 20px 70px;
+  }
+
+  .product_specific_details {
+    margin: 0px 70px 30px;
+  }
+
+/*Contact us*/
+  .contact_img {
+    display: none;
+  }
+    
+  .contact {
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/contactus.jpg);
+    margin: 0px;
+    background-size: cover;
+  }
+  
+/*About us*/
+  .about_us_page img, 
+  .about_us_page h1 {
+    display: none;
+  }
+  
+  .about_us_text p {
+    margin: 20px 120px;
+  }
+    
+  .our_story_text p {
+    margin: 20px 120px;
+  }
+    
+  .our_goal_text p {
+    margin: 20px 120px;
+  }
+  
+/*Checkout*/
+  .checkout h1 {
+    margin: 0px 20px;
+  }
+  
+  .checkout_content {
+    margin: 20px;
+  }
+  
+  .checkout_form {
+    margin: 180px 20px 0px;
+  }
+}
+  
+@media (min-width: 601px)  {
+  header {
+    border: none;
+  }
+  
+  .header_section {
+    align-items: center;
+    height: auto;
+    margin: auto auto 0px 40px;
+  }
+
+  .header_section a {
+    margin: 0px;
+  }
+  
+  .menu_item_person {
+    margin: auto;
+  }
+  
+  .menu_item_shoppingbag {
+    margin: auto;
+  }
+  
+  .home_button {
+    height: auto;
+    width: 100px;
+    margin: 5px 20px;
+  }
+  
+  .searchbar {
+    margin-right: 0px;
+  }
+  
+  .menu_item_searchbar {
+    position: absolute;
+    right: 110px;
+    top: auto;
+    width: 300px;
+  }
+  
+  .menu_item_person {
+    margin: auto;
+  }
+    
+  .menu_item_shoppingbag {
+    margin: auto;
+  }
+  
+  .navbar {
+    display: block;
+    position: static;
+  }
+    
+  .hamburger-icon {
+    display: none;
+  }
+  
+  nav {
+    background-color: var(--color-secondary);
+    font-weight: 700;
+    justify-content: center;
+    display: flex;
+  }
+
+  nav li {
+    background-color: var(--color-background);
+    border-radius: 5px;
+    text-align: center;
+    border-bottom: none;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--color-tertiary);
+    font-weight: 700;
+    border-radius: 5px;
+  }
+
+  footer {
+    background-color: var(--color-primary);
+    padding: none;
+    flex-direction: row;
+  }
+  
+  .footer_content {
+    flex: 1;
+    margin: 10px 10px;
+  }
+  
+  footer a {
+    font-weight: 700;
+  }
+  
+  footer h3, 
+  footer p, 
+  footer a {
+    color: var(--color-tertiary);
+    border-bottom: none;
+    font-weight: 700;
+  }
+  
+  footer p, a {
+    font-weight: 300;
+  }
+  
+/*Home page*/ 
+  .home-image {
+    min-height: 700px;
+  }
+  
+  .home-image_text {
+    position: absolute;
+    text-align: left;
+    left: 75px;
+    margin: 0px;
+  }
+  
+  .home-image h1 {
+    font-size: 35px;
+   }
+  
+  .home-image h2 {
+    font-size: var(--large);
+   }
+  
+  .home-image a {
+    font-size: var(--medium_large);
+   }
+  
+  .inspiration {
+    flex-direction: row;
+   }
+  
+  .picture_one h2 {
+    font-size: var(--large);
+  }
+  
+  .picture_two h2 {
+    font-size: var(--large);
+    top: 20px;
+  }
+  
+  .picture_two i {
+    top: 30px;
+  }
+  
+  .picture_two h2 {
+    font-size: var(--large);
+  }
+  
+/*List of jackets*/
+  .h1_jacket { 
+    padding: 20px 0px 0px 20px
+  }
+  
+/*Contact us*/
+  .contact_form {
+    margin: 0px auto;
+    margin: 30px auto;
+    width: 600px;
+  }
+  
+  .contact_form form {
+    width: 500px;
+  }
+
+/*Checkout*/
+  .checkout h1 {
+    font-size: var(--larger);
+  }
+  
+  .checkout_content {
+    grid-template-rows: 5fr 1fr 1fr;
+  }
+  
+  .content_1 img {
+      height: 300px;
+      margin: 20px;
+  }
+  
+  .content_2 h2 {
+    font-size: var(--medium_large);
+  }
+  
+  .content_2 h3 {
+    font-size: var(--small_medium);
+  }
+  
+  .content_2 p {
+    font-size: var(--medium);
+  }
+  
+  .content_2 div {
+      margin: 60px 0px;
+  }
+  
+  .content_3 p {
+      float: right;
+      margin: 300px -45px 20px 0px;
+  }
+  
+  .content_3 i {
+    font-size: var(--larger);
+  
+  }
+  
+  .content_4 p {
+    font-size: var(--small_medium);
+  }
+  
+  .content_4 i {
+    font-size: var(--medium_large);
+      margin: 15px 10px;
+  }
+  
+  .content_5_total {
+    margin: 20px;
+    font-size: var(--medium_large);
+  }
+  
+  .content_5_price {
+      margin: 20px;
+      font-size: var(--medium_large);
+  }
+  
+  .checkout_form h2 {
+    font-size: var(--large);
+    margin: 20px auto;
+  }
+  
+  .form_1 {
+    width: 500px;
+    margin: 20px auto;
+  }
+  
+  .form_1 h3 {
+    font-size: var(--medium_large);
+  }
+  
+  .form_2 {
+      width: 500px;
+  }
+  
+  .form_2 a {
+    margin: 10px 50px 50px;
+    font-size: var(--large);
+    font-weight: 400;
+  }
+  
+  .checkout_form input, 
+  .checkout_form textarea {
+    padding: 17px 10px;
+    font-size: 16px;
+  } 
+  
+  .checkout_form label {
+    font-size: var(--medium);
+  } 
+  
+/*Checkout-success*/
+  .checkout-success_content h1 {
+    font-size: var(--large);
+  }
+  
+  .checkout-success_content h2 {
+    font-size: var(--medium_large);
+  }
+  
+/*List of jackets*/
+  .jacket_list {
+    grid-template-columns: repeat(3,1fr);
+  }
+  
+  .jacket img {
+    height: 80%;
+  }  
+}
+  
+@media (min-width: 800px) {
+  .jacket img {
+      height: 100%;
+  }
+  
+  .jacket h2 {
+      font-size: var(--small_medium);
+  }
+  
+  .jacket h3 {
+      font-size: var(--small);
+  }
+}
+  
+@media (min-width: 1001px) {
+  nav li {
+      margin: 0px 10px;
+      width: 170px;
+  }
+  
+  nav a {
+    padding: 5px 50px;
+  }
+  
+  .footer_content {
+    margin: 10px 50px;
+  }
+  
+  footer {
+    padding: 0px 20px;
+  }
+  
+/*Home page*/
+  .picture_one h2 {
+    font-size: var(--larger);
+  }
+  
+  .picture_one i {
+    font-size: 50px;
+    bottom: 30px;
+  }
+  
+  .picture_two h2 {
+    font-size: var(--larger);
+    top: 20px;
+  }
+  
+  .picture_two i {
+    font-size: 50px;
+    top: 30px;
+  }
+  
+  .picture_three h2 {
+    font-size: var(--larger);
+  }
+  
+  .picture_three i {
+    font-size: 50px;
+    bottom: 30px;
+  }
+  
+/*List of jackets*/
+  .jacket {
+    grid-template-rows: 180px 30px 30px 40px 10px;
+    padding: 0px 20px;
+    height: 310px;
+  }
+  
+  .jacket_list {
+    margin: 10px auto;
+  }
+  
+  .h1_jacket { 
+    margin: 10px auto;
+    padding: 20px 0px 0px 20px
+  }
+  
+  .jacket_text {
+    margin: 10px auto;
+  }
+  
+  .jacket_text button {
+    padding: 5px 40px;
+  }
+  
+  .jacket h2 {
+    font-size: var(--medium_large);
+  }
+  
+  .jacket h3 {
+    font-size: var(--small_medium);
+  }
+  
+/*Jacket specific page*/
+  .product_specific {
+    flex-direction: row;
+    margin: 50px auto;
+  }
+  
+  .product_specific_details {
+    padding: 20px 80px;
+    margin: 0px 20px;
+  }
+  
+  .product_specific_details_text i {
+    font-size: var(--medium_large);
+  }
+
+  .product_specific_image {
+    margin: 0px;
+  }
+  
+  .product_specific_details h1 {
+    margin-bottom: auto;
+  }
+  
+  .product_specific_details i {
+    font-size: var(--larger);
+  }
+
+/*About us*/
+  .small_header {
+    display: none;
+  }
+
+  .about_us_page {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 333px 333px 333px;
+    margin: 50px auto;
+    gap: 0px 0px;
+    color: var(--color-tertiary);
+    font-size: var(--small_medium);
+  }
+
+  .about_us_text {
+    background-image: none;
+  }
+
+  .about_us_page img {
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .about_us_page p {
+    margin: 0px 5px 15px;
+    line-height: 20px;
+  }
+
+  .about_us_img h1 {
+    position: relative;
+    top: -332px;
+    right: -410px;
+    color: white;
+    text-shadow: 0px 0px 15px black;
+  }
+
+  .about_us_text h1 {
+    position: relative;
+    color: var(--color-tertiary);
+    margin: 21px 3px 0px;
+  }
+
+  .our_story_text {
+    background-image: none;
+  }
+
+  .our_story_text h1 {
+    position: relative;
+    color: var(--color-tertiary);
+    left: 443px;
+    top: -6px;
+    margin: 21px 3px 0px;
+  }
+
+  .our_story_img h1 {
+    position: relative;
+    color: white;
+    text-shadow: 0px 0px 15px black;
+    top: -337px;
+    right: -5px;
+  }
+
+  .our_goal_text {
+    background-image: none;
+  }
+
+  .our_goal_text h1 {
+    position: relative;
+    color: var(--color-tertiary);
+    margin: 21px 3px 0px;
+  }
+
+  .our_goal_img h1 {
+    position: relative;
+    color: white;
+    text-shadow: 0px 0px 15px black;
+    top: -332px;
+    right: -446px;
+  }
+
+/*Contact us */
+  .contact {
+    display: flex;
+  }
+
+  .contact_img {
+    flex: 1;
+    margin: auto;
+  }
+
+  .contact img {
+    width: 450px;
+    object-fit: cover;
+  }
+
+  .contact_form {
+    flex: 1;
+  }
+
+  .contact_form form {
+    width: 400px;
+  }
+  
+/*Checkout*/
+  
+  .checkout h1 {
+    margin: 0 auto;
+  }
+  
+  .checkout_content {
+    margin: 0px auto;
+  }
+  
+  .form_1 {
+    width: 600px;
+  }
+  
+  .form_2 {
+      width: 600px;
+  }
+  
+/*Checkout-success*/
+  .checkout-success_content {
+    padding: 50px;
+    border-radius: 10px;  
+     
+   }
+   
+   .checkout-success_content h1 {
+     width: 450px;
+   }
+   
+   .checkout-success_content h2 {
+    width: 450px;
+    font-size: var(--large);
+   }
+   
+   .checkout-success_content i {
+    font-size: 60px;
+   }
+   
+}
+    
+  

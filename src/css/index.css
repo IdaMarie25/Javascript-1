@@ -1,0 +1,166 @@
+/*Home page*/
+
+  .home-image {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/headerimg.jpg);
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+    color: var(--color-background);
+    position: relative;
+  }
+  
+  .home-image_text {
+    position: relative;
+    top: 180px;
+    text-align: center;
+  }
+  
+  .home-image h1 {
+    font-size: var(--large);
+    margin: 0;
+  }
+
+  .home-image h2 {
+    font-size: var(--medium_large);
+    margin: 0px 0px 25px 0px;
+    color: white;
+  }
+  
+  .home-image_text a:hover {
+    background-color: var(--color-tertiary);
+    color: white;
+  }
+  
+  .home-image a {
+    color: var(--color-tertiary);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.85);
+    font-weight: 300;
+    font-size: var(--small_medium);
+    padding: 5px 40px;
+    border-radius: 6px;
+  }
+  
+.slogan {
+    background-color: var(--color-primary);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    display: flex;
+  }
+  
+  .slogan img {
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
+  
+  .logo {
+    max-width: 1000px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo_images {
+    flex: 1;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .logo_images img {
+    height: 50px;
+    margin: 5px 10px;
+  }
+  
+/*Inspiration section*/
+
+  .inspiration {
+    height: 70vh;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .inspiration_content {
+    display: flex;
+    font-size: var(--small_medium);
+    flex: 1;
+  }
+  
+  .picture_one {
+    position: relative;
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/bluesweater.jpg);
+    background-size: cover;
+    background-position-x: center;
+  }
+  
+  .picture_one h2 {
+    position: absolute;
+    font-size: var(--large);
+    color: white;
+    bottom: 20px;
+    left: 15px;
+    margin: 0px 150px 0px 0px;
+  }
+  
+  .picture_one i {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    bottom: 30px;
+    right: 50px;
+  }
+  
+  .picture_two {
+    position: relative;
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/orangejacket.jpg);
+    background-size: cover;
+    background-position-y: center;
+  }
+  
+  .picture_two h2 {
+    position: absolute;
+    font-size: var(--large);
+    color: white;
+    bottom: 20px;
+    left: 15px;
+    margin: 0px 150px 0px 0px;
+  }
+  
+  .picture_two i {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    bottom: 30px;
+    right: 50px;
+  }
+  
+  .picture_three {
+    position: relative;
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/threepeople_hiking.jpg);
+    background-size: cover;
+  }
+  
+  .picture_three h2 {
+    position: absolute;
+    font-size: var(--large);
+    color: white;
+    bottom: 20px;
+    left: 15px;
+    margin: 0px 150px 0px 0px;
+  }
+  
+  .picture_three i {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    bottom: 30px;
+    right: 50px;
+  }
+  
