@@ -270,6 +270,12 @@ input::placeholder {
   color: white;
 }
 
+
+.home-image_text a:hover {
+  background-color: var(--color-tertiary);
+  color: white;
+}
+
 .home-image a {
   color: var(--color-tertiary);
   text-decoration: none;
