@@ -9,3 +9,12 @@
   --color-secondary-background: rgba(242, 245, 246, 1);
   --color-forms: rgba(231, 225, 225, 1)
 }
+
+:root {
+  --small: 12px;
+  --small_medium: 15px;
+  --medium: 17px;
+  --medium_large: 20px;
+  --large: 25px;
+  --larger: 30px;
+}
