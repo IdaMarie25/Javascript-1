@@ -8,6 +8,7 @@
     display: none;
   }
 
+
 /*Contact us*/
   .contact_img {
     display: none;
@@ -221,6 +222,10 @@
   
   footer p, a {
     font-weight: 300;
+  }
+
+  .active_links {
+    text-decoration: underline;
   }
   
 /*Home page*/ 

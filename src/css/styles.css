@@ -136,7 +136,7 @@ nav a {
 }
 
 .active_links {
-  text-decoration: underline;
+  font-weight: 700;
 }
 
 .footer_content a:hover {
