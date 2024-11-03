@@ -45,6 +45,11 @@
     margin: 3px;
   }
   
+  .product_specific_details a {
+    text-decoration: none;
+  }
+
+
   .product_specific_details_color p {
     margin: 0px;
   }
@@ -152,4 +157,9 @@
     border: none;
   }
   
+  .cta-button_cart:hover {
+    background-color: var(--color-tertiary);
+    color: white;
+  }
+
   
