@@ -54,18 +54,6 @@
     font-size: var(--large);
   }
 
-/*List of jackets*/
-  .jacket_list {
-    margin: 10px 70px;
-  }
-
-  .h1_jacket { 
-    margin: 10px 70px;
-  }
-
-  .jacket_text {
-    margin: 10px 70px;
-  }
 
 /*Jacket specific page*/
   .product_specific_image {
@@ -266,12 +254,7 @@
   .picture_two h2 {
     font-size: var(--large);
   }
-  
-/*List of jackets*/
-  .h1_jacket { 
-    padding: 20px 0px 0px 20px
-  }
-  
+
 /*Contact us*/
   .contact_form {
     margin: 0px auto;
@@ -456,37 +439,7 @@
     bottom: 30px;
   }
   
-/*List of jackets*/
-  .jacket {
-    grid-template-rows: 180px 30px 30px 40px 10px;
-    padding: 0px 20px;
-    height: 310px;
-  }
-  
-  .jacket_list {
-    margin: 10px auto;
-  }
-  
-  .h1_jacket { 
-    margin: 10px auto;
-    padding: 20px 0px 0px 20px
-  }
-  
-  .jacket_text {
-    margin: 10px auto;
-  }
-  
-  .jacket_text button {
-    padding: 5px 40px;
-  }
-  
-  .jacket h2 {
-    font-size: var(--medium_large);
-  }
-  
-  .jacket h3 {
-    font-size: var(--small_medium);
-  }
+
   
 /*Jacket specific page*/
   .product_specific {

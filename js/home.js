@@ -39,9 +39,11 @@ function displayProducts(products) {
        productItem.className = 'product-item';
 
        productItem.innerHTML = `
-       <h3>${product.title}</h3>
-       <img src="${product.image}" alt="${product.title}"/>
-       <p>${product.price} kroner</p>
+        <a href="products/specific.html?id=${product.id}">
+            <h3>${product.title}</h3>
+            <img src="${product.image}" alt="${product.title}"/>
+            <p>${product.price} kroner</p>
+        </a>
        `;
 
        container.appendChild(productItem);
