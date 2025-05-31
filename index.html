@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="stylesheet" href="src/css/media.css">
+    <link rel="stylesheet" href="src/css/jackets.css">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
 
  
@@ -32,7 +33,7 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo.png">
     <script src="https://kit.fontawesome.com/c4ddc88aa3.js" crossorigin="anonymous"></script>
 
   </head>
@@ -60,57 +61,131 @@
       <div class="navbar">
         <nav>
           <ul>
-            <li><a href="jackets.html">Men</a></li>
-            <li><a href="">Women</a></li>
-            <li><a href="">Shoes</a></li>
-            <li><a href="">Gear</a></li>
-            <li><a href="">Outlet</a></li>
+            <li><a href="index.html">Men</a></li>
+            <li><a href="index.html">Women</a></li>
+            <li><a href="index.html">Shoes</a></li>
+            <li><a href="index.html">Gear</a></li>
+            <li><a href="index.html">Outlet</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
       <div class="home-image">
-        <div class="home-image_text">
-          <h1>Check out the new winter collection!</h1>
-          <h2>Now in new colours and sizes</h2>
-          <a href="jackets.html">Check the new collection here!</a>
-        </div>
       </div>
-      <div class="slogan">
-        <img src="assets/images/slogan.png" alt="The slogan of Rainydays">
-      </div>
-      <div class="logo">
-        <div class="logo_images">
-          <img src="assets/images/scott_logo.png" alt="logo for scott">
+
+      <div id="container" class="container"></div>
+
+      <!--
+      <h1 class="h1_jacket">Hiking jackets</h1>
+      <section class="jacket_text">
+        <div class="jacket_size">
+            <button>Size</button>
+            <div class="jacket_size_content"> 
+                <a href="">Small</a>
+                <a href="">Medium</a>
+                <a href="">Large</a>
+            </div>
         </div>
-        <div class="logo_images">
-          <img src="assets/images/patagonia_logo.png" alt="logo for patagonia">
+        <div class="jacket_brand">
+            <button>Brand</button>
+            <div class="jacket_brand_content"> 
+                <a href="">Revolutionrace</a>
+                <a href="">1st witch</a>
+                <a href="">Scott</a>
+                <a href="">Xtreme</a>
+            </div>
         </div>
-        <div class="logo_images">
-          <img src="assets/images/adidas_logo.png" alt="logo for adidas">
+        <div class="jacket_price">
+            <button>Price</button>
+            <div class="jacket_price_content"> 
+                <a href="">Price low to high</a>
+                <a href="">Price high to low</a>
+            </div>
         </div>
-        <div class="logo_images">
-          <img src="assets/images/hellyhansen_logo.png" alt="logo for helly hansen">
+      </section>
+      <section class="jacket_list">
+        <div>
+          <a href="products/specific.html" class="jacket">
+            <img src="assets/images/jacket_1.jpg" alt="Red softshell jacket by revolutionrace">
+            <h2>Revolutionrace</h2>
+            <h3>Softshell jacket, red</h3>
+            <p>599,-</p>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <div class="in_stock">
+              <i class="fa-solid fa-circle"></i>
+              <p>in stock</p>
+            </div>
+          </a>
         </div>
-        <div class="logo_images">
-          <img src="assets/images/revolutionrace_logo.png" alt="logo for revolutionrace">
+        <div>
+          <a href="products/specific.html" class="jacket">
+            <img src="assets/images/jacket_2.jpg" alt="Grey light jacket by Scott">
+            <h2>Scott</h2>
+            <h3>Microlight hiking jacket, grey</h3>
+            <p>799,-</p>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <div class="in_stock">
+              <i class="fa-solid fa-circle"></i>
+              <p>in stock</p>
+            </div>
+          </a>
         </div>
-      </div>
-      <div class="inspiration">
-        <div class="inspiration_content picture_one">
-          <h2>Clothes for the summer season</h2>
-          <i class="fa-solid fa-chevron-right"></i>
+        <div>
+          <a href="products/specific.html" class="jacket">
+            <img src="assets/images/jacket_3.jpg" alt="Red and grey parka jacket by 1st witch">
+            <h2>1st witch</h2>
+            <h3>Parka jacket, orange and grey</h3>
+            <p>1499,-</p>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <div class="in_stock">
+              <i class="fa-solid fa-circle"></i>
+              <p>in stock</p>
+            </div>
+          </a>
         </div>
-        <div class="inspiration_content picture_two">
-          <h2>New styles added to the outlet</h2>
-          <i class="fa-solid fa-chevron-right"></i>
+        <div>
+          <a href="products/specific.html" class="jacket">
+            <img src="assets/images/jacket_4.jpg" alt="Black insulated hiking jacket by scott">
+            <h2>Scott</h2>
+            <h3>Insulated hiking jacket, black</h3>
+            <p>1399,-</p>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <div class="in_stock">
+              <i class="fa-solid fa-circle"></i>
+              <p>in stock</p>
+            </div>
+          </a>
         </div>
-        <div class="inspiration_content picture_three">
-          <h2>Guides to find your perfect fit</h2>
-          <i class="fa-solid fa-chevron-right"></i>
+        <div>
+          <a href="products/specific.html" class="jacket">
+            <img src="assets/images/jacket_5.jpg" alt="Grey hardshell jacket by Xtreme">
+            <h2>Xtreme</h2>
+            <h3>Hardshell jacket, grey</h3>
+            <p>899,-</p>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <div class="in_stock">
+              <i class="fa-solid fa-circle"></i>
+              <p>in stock</p>
+            </div>
+          </a>
         </div>
-      </div>
+        <div>
+          <a href="products/specific.html" class="jacket">
+            <img src="assets/images/jacket_6.jpg" alt="Black parka jacket by scott">
+            <h2>Scott</h2>
+            <h3>Parka jacket, black</h3>
+            <p>999,-</p>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <div class="in_stock">
+              <i class="fa-solid fa-circle"></i>
+              <p>in stock</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    -->
+
     </main>
     <footer>
       <div class="footer_content">

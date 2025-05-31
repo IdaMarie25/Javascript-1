@@ -230,16 +230,10 @@
   
 /*Home page*/ 
   .home-image {
-    min-height: 700px;
+    min-height: 200px;
   }
   
-  .home-image_text {
-    position: absolute;
-    text-align: left;
-    left: 75px;
-    margin: 0px;
-  }
-  
+ 
   .home-image h1 {
     font-size: 35px;
    }

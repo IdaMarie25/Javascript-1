@@ -2,7 +2,7 @@
 
   .home-image {
     width: 100%;
-    height: 500px;
+    height: 200px;
     background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.32)), url(../../assets/images/headerimg.jpg);
     background-size: cover;
     background-position-x: right;
@@ -11,11 +11,7 @@
     position: relative;
   }
   
-  .home-image_text {
-    position: relative;
-    top: 180px;
-    text-align: center;
-  }
+
   
   .home-image h1 {
     font-size: var(--large);
@@ -28,11 +24,7 @@
     color: white;
   }
   
-  .home-image_text a:hover {
-    background-color: var(--color-tertiary);
-    color: white;
-  }
-  
+
   .home-image a {
     color: var(--color-tertiary);
     text-decoration: none;
