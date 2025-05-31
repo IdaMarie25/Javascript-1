@@ -1,2 +1,41 @@
 
 /* Jacket specific page*/
+
+
+
+
+#specific-product {
+    margin: 30px 30px;
+    }
+  
+#specific-product img {
+    width: auto;
+    height: 100%;
+    max-height: 400px;
+    }
+
+#specific-product h1 {
+    font-size: var(--large);
+}
+
+#specific-product h2 {
+    font-size: var(--medium);
+    color: var(--color-tertiary);
+    font-weight: 200;
+}
+
+#specific-product h3 {
+    font-size: var(--medium);
+}
+
+#specific-product p {
+    font-size: var(--medium);
+}
+
+#specific-product button {
+    background-color: var(--color-primary);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-style: none;
+    text-align: center;
+}

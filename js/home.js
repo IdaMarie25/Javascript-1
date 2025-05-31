@@ -1,6 +1,47 @@
-
-const container = document.querySelector("#container");
+// Drop-down menues
+const dropdownSize = document.querySelector("#dropdown-size");
+const dropdownGender = document.querySelector("#dropdown-gender");
 const API = 'https://api.noroff.dev/api/v1/rainy-days';
+
+async function dropdowns() {
+    try {
+        const response = await fetch(API);
+        const products = await response.json();
+
+        const allSizes = new Set();
+        const allGenders = new Set();
+
+        products.forEach(product => {
+            product.sizes.forEach(size => allSizes.add(size))
+
+            if (product.gender) {
+                allGenders.add(product.gender);
+            }
+        });  
+
+        allSizes.forEach(size => {
+            const option = document.createElement("option");
+            option.value = size;
+            option.textContent = size;
+            dropdownSize.appendChild(option);
+        })
+
+        allGenders.forEach(gender => {
+            const option = document.createElement("option");
+            option.value = gender;
+            option.textContent = gender;
+            dropdownGender.appendChild(option);
+        })
+    } catch (error) {
+        console.error("Failed to fetch sizes:", error);
+    }
+}
+
+dropdowns();
+
+//Fetching products
+const container = document.querySelector("#container");
+
 
 async function gettingProducts() {
     try {
@@ -38,4 +79,6 @@ function displayProducts(products) {
 }
 
 gettingProducts();
+
+
 
