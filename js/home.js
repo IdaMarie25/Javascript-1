@@ -1,22 +1,32 @@
-// Drop-down menues
+// Drop-down menues and filtering products
 const dropdownSize = document.querySelector("#dropdown-size");
 const dropdownGender = document.querySelector("#dropdown-gender");
+const container = document.querySelector("#container");
 const API = 'https://api.noroff.dev/api/v1/rainy-days';
+
+let allProducts = [];
+
+async function prepareAndLoad() {
+    try {
+        const response = await fetch(API)
+        const products = await response.json();
+        allProducts = products; 
+
+        gettingProducts(products);
+        displayProducts(products);
+    } catch (error) {
+        console.error("Failed to prepare and load", error);
+    }
+}
 
 async function dropdowns() {
     try {
-        const response = await fetch(API);
-        const products = await response.json();
-
         const allSizes = new Set();
         const allGenders = new Set();
 
         products.forEach(product => {
             product.sizes.forEach(size => allSizes.add(size))
-
-            if (product.gender) {
-                allGenders.add(product.gender);
-            }
+            if (product.gender) allGenders.add(product.gender);
         });  
 
         allSizes.forEach(size => {
@@ -37,11 +47,7 @@ async function dropdowns() {
     }
 }
 
-dropdowns();
-
 //Fetching products
-const container = document.querySelector("#container");
-
 
 async function gettingProducts() {
     try {
@@ -58,7 +64,6 @@ async function gettingProducts() {
     }
 
 function displayProducts(products) {
-    const container = document.querySelector('#container');
     container.innerHTML = '';
 
     products.forEach(product => {
@@ -75,10 +80,25 @@ function displayProducts(products) {
 
        container.appendChild(productItem);
     });
-
 }
 
-gettingProducts();
+function filterProducts() {
+    const selectedSize = dropdownSize.value;
+    const selectedGender = dropdownGender.value;
+
+    const filtered = allProducts.filter(product => {
+        const matchesSize = selectedSize === "Select size" || product.size.includes(selectedSize);
+        const matchesGender = selectedGender === "Select gender" || product.gender.includes(selectedGender);
+        return matchesSize && matchesGender;
+    });
+    displayProducts(filtered);
+}
+
+dropdownSize.addEventListener("change", filterProducts);
+dropdownGender.addEventListener("change", filterProducts);
+
+prepareAndLoad();
+
 
 
 
