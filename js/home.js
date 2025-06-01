@@ -12,14 +12,14 @@ async function prepareAndLoad() {
         const products = await response.json();
         allProducts = products; 
 
-        gettingProducts(products);
+        dropdowns(products);
         displayProducts(products);
     } catch (error) {
         console.error("Failed to prepare and load", error);
     }
 }
 
-async function dropdowns() {
+async function dropdowns(products) {
     try {
         const allSizes = new Set();
         const allGenders = new Set();
@@ -87,8 +87,8 @@ function filterProducts() {
     const selectedGender = dropdownGender.value;
 
     const filtered = allProducts.filter(product => {
-        const matchesSize = selectedSize === "Select size" || product.size.includes(selectedSize);
-        const matchesGender = selectedGender === "Select gender" || product.gender.includes(selectedGender);
+        const matchesSize = selectedSize === "" || product.sizes.includes(selectedSize);
+        const matchesGender = selectedGender === "" || product.gender.includes(selectedGender);
         return matchesSize && matchesGender;
     });
     displayProducts(filtered);
