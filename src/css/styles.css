@@ -151,7 +151,6 @@ nav li:hover {
 .active, 
 .active a {
   background-color: var(--color-tertiary);
-  color: white;
 }
 
 nav a:hover {

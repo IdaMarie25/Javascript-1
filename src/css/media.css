@@ -8,6 +8,10 @@
     display: none;
   }
 
+  /*Homepage*/
+  .jackets-container {
+    margin: 20px 50px;
+  }
 
 /*Contact us*/
   .contact_img {
@@ -38,31 +42,11 @@
   }
 
 /*Home page*/  
-  .inspiration {
-    height: 40vh; 
-  }
-
-  .picture_one h2 {
-    font-size: var(--large);
-  }
-
-  .picture_two h2 {
-    font-size: var(--large);
-  }
-
-  .picture_three h2 {
-    font-size: var(--large);
-  }
-
+.jackets-container {
+  margin: 20px 50px;
+}
 
 /*Jacket specific page*/
-  .product_specific_image {
-    margin: 20px 70px;
-  }
-
-  .product_specific_details {
-    margin: 0px 70px 30px;
-  }
 
 /*Contact us*/
   .contact_img {
@@ -369,13 +353,38 @@
   }
   
 /*List of jackets*/
-  .jacket_list {
-    grid-template-columns: repeat(3,1fr);
+#specific-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr 1fr 40px;
   }
-  
-  .jacket img {
-    height: 80%;
-  }  
+
+#specific-product img {
+  height: 400px;
+  grid-row-start: 1;
+  grid-row-end: two;
+  box-shadow: 1px 1px 6px 2px rgb(0 55 66 / 20%);
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  }
+
+#specific-product h1 {
+  margin: 50px 0px 0px 20px;
+}
+
+#specific-product h2 {
+  margin: 0px 10px 0px 20px;
+}
+
+#specific-product h3 {
+  text-align: right;
+}
+
+#specific-product p {
+    text-align: right;
+}
+
 }
   
 @media (min-width: 800px) {
@@ -411,62 +420,16 @@
   }
   
 /*Home page*/
-  .picture_one h2 {
-    font-size: var(--larger);
-  }
-  
-  .picture_one i {
-    font-size: 50px;
-    bottom: 30px;
-  }
-  
-  .picture_two h2 {
-    font-size: var(--larger);
-    top: 20px;
-  }
-  
-  .picture_two i {
-    font-size: 50px;
-    top: 30px;
-  }
-  
-  .picture_three h2 {
-    font-size: var(--larger);
-  }
-  
-  .picture_three i {
-    font-size: 50px;
-    bottom: 30px;
-  }
+ 
+.jackets-container {
+    margin: 20px 150px;
+}
   
 
-  
 /*Jacket specific page*/
-  .product_specific {
-    flex-direction: row;
-    margin: 50px auto;
-  }
-  
-  .product_specific_details {
-    padding: 20px 80px;
-    margin: 0px 20px;
-  }
-  
-  .product_specific_details_text i {
-    font-size: var(--medium_large);
-  }
-
-  .product_specific_image {
-    margin: 0px;
-  }
-  
-  .product_specific_details h1 {
-    margin-bottom: auto;
-  }
-  
-  .product_specific_details i {
-    font-size: var(--larger);
-  }
+  #specific-product {
+    margin: 20px 200px;
+    }
 
 /*About us*/
   .small_header {
