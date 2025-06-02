@@ -2,10 +2,18 @@
 const dropdownSize = document.querySelector("#dropdown-size");
 const dropdownGender = document.querySelector("#dropdown-gender");
 const shoppingcartContent = document.querySelector(".shoppingcart-content");
+const cartCount = document.querySelector("#cart-count")
 const container = document.querySelector("#container");
 const API = 'https://api.noroff.dev/api/v1/rainy-days';
 
 let allProducts = [];
+
+document.addEventListener("DOMContentLoaded", () => {
+    const savedCart = getCart();
+    savedCart.forEach(item => renderCartItem(item));
+    updateCartTotal();
+    updateCartCount();
+});
 
 async function prepareAndLoad() {
     try {
@@ -108,63 +116,111 @@ function addToCart(productBox) {
     const productTitle = productBox.querySelector("h3").textContent;
     const productPrice = productBox.querySelector("p").textContent;
 
+    let shoppingcart = getCart();
+    const existing = shoppingcart.find(item => item.title === productTitle);
+
+    if (existing) {
+        existing.quantity += 1;
+    } else {
+        shoppingcart.push({ image: productImage, title: productTitle, price: productPrice, quantity: 1});
+    }
+
+    saveCart(shoppingcart);
+    renderCart(shoppingcart);
+    updateCartTotal();
+    updateCartCount();
+}
+
+function renderCart (shoppingcart) {
+    shoppingcartContent.innerHTML = "";
+    shoppingcart.forEach(item => renderCartItem(item));
+}
+
+function renderCartItem(item) {
     const shoppingcartBox = document.createElement("div");
+    
     shoppingcartBox.classList.add("shoppingcart-box");
     shoppingcartBox.innerHTML = `
-    <img src="${productImage}"/>
+    <img src="${item.image}"/>
     <div class="shoppingcart-detail"> 
-        <h3>${productTitle}</h3>
-        <p class="shoppingcart-price">${productPrice},-</p>
+        <h3>${item.title}</h3>
+        <p class="shoppingcart-price">${item.price},-</p>
         <div class="shoppingcart-quantity">
-            <button id="minus">-</button>
-            <p class="number">1</p>
-            <button id="pluss">+</button>
+            <button class="minus">-</button>
+            <p class="number">${item.quantity}</p>
+            <button class="plus">+</button>
         </div>
     </div>
     <i class="fa-solid fa-trash shoppingcart-trash"></i>
     `;
 
+  shoppingcartBox.querySelector(".minus").addEventListener("click", () => {
+        updateQuantity(item.title, -1);
+  });
+  shoppingcartBox.querySelector(".plus").addEventListener("click", () => {
+    updateQuantity(item.title, 1);
+    });
+    shoppingcartBox.querySelector(".shoppingcart-trash").addEventListener("click", () => {
+        removeFromCart(item.title);
+  });
+
     shoppingcartContent.appendChild(shoppingcartBox); 
 
-    shoppingcartBox.querySelector(".shoppingcart-trash").addEventListener("click", () => {
-        shoppingcartBox.remove();
+}
 
-        totalPrice();
-    })
+function updateQuantity(title, change) {
+    let shoppingcart = getCart();
+    const item = shoppingcart.find(i => i.title === title);
+    if (!item) return;
 
-    shoppingcartBox.querySelector(".shoppingcart-quantity").addEventListener("click", (event) => {
-        const number = shoppingcartBox.querySelector(".number");
-        const minusButton = shoppingcartBox.querySelector("#minus");
-        let quantity = parseInt(number.textContent); 
+    item.quantity += change;
+    if (item.quantity < 1) {
+        shoppingcart = shoppingcart.filter(i => i.title !== title);
+    }
 
-        if (event.target.id === "minus" && quantity > 1) {
-            quantity--;
-        } else if (event.target.id === "pluss") {
-            quantity++;
-        }
+    saveCart(shoppingcart);
+    renderCart(shoppingcart);
+    updateCartTotal();
+    updateCartCount();
+}
 
-        number.textContent = quantity;
-        totalPrice();
-    });
+function removeFromCart(title) {
+    let shoppingcart = getCart();
+    shoppingcart = shoppingcart.filter(item => item.title !== title);
+    saveCart(shoppingcart);
+    renderCart(shoppingcart);
+    updateCartTotal();
+    updateCartCount();
+}
 
-    totalPrice();
-};
-
-const totalPrice = () => {
+function updateCartTotal () {
     const totalPriceElement = document.querySelector(".total-price");
-    const shoppingcartBoxes = shoppingcartContent.querySelectorAll(".shoppingcart-detail");
+    const shoppingcart = getCart();
     let total = 0;
 
-    shoppingcartBoxes.forEach(shoppingcartBox => {
-        const priceElement = shoppingcartBox.querySelector(".shoppingcart-price");
-        const quantityElement = shoppingcartBox.querySelector(".number");
-        const price = parseFloat(priceElement.textContent.replace(/[^\d.-]/g, ""));
-        const quantity = parseInt (quantityElement.textContent);
-        total += price * quantity; 
+    shoppingcart.forEach(item => {
+        const price = parseFloat(item.price.replace(/[^\d.-]/g, ""));
+        total += price * item.quantity;
     });
 
     totalPriceElement.textContent = `${total.toFixed(2)} kr`;
+}
 
-};
+function updateCartCount() {
+    const shoppingcart = getCart();
+    const totalItems = shoppingcart.reduce((sum, item) => sum + item.quantity, 0);
+    
+    if (cartCount) {
+        cartCount.textContent = totalItems;
+    }
+}
+
+function getCart() {
+    return JSON.parse(localStorage.getItem("cart")) || [];
+}
+
+function saveCart(shoppingcart) {
+    localStorage.setItem("cart", JSON.stringify(shoppingcart));
+}
 
 

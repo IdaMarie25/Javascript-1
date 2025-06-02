@@ -65,6 +65,9 @@
   border-radius: 10px;
 }
 
+
+/*Shoppingcart*/
+
 .shoppingcart {
   position: fixed;
   top: 0;
@@ -90,10 +93,6 @@
   color: white;
 }
 
-.shoppingcart-content {
-
-}
-
 .cart-total {
   display: flex;
   align-items: center;
@@ -105,9 +104,6 @@
 
 }
 
-.total-title {
-
-}
 
 .total-price {
   margin-left: 10px;
@@ -179,3 +175,15 @@
   position: relative;
   font-size: 29px;
 }
+
+.cart-count {
+  position: absolute;
+  top: 17px;
+  right: -10px;
+  background: var(--color-primary);
+  color: var(--color-tertiary);
+  border-radius: 20px;
+  font-size: 10px;
+  padding: 2px 6px;
+}
+
