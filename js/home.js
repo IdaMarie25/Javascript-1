@@ -13,6 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
     savedCart.forEach(item => renderCartItem(item));
     updateCartTotal();
     updateCartCount();
+
+    const buyButton = document.querySelector(".buy-button");
+
+    if (buyButton) {
+        buyButton.addEventListener("click", () => {
+            window.location.href = "checkout.html";
+        });
+    };
 });
 
 async function prepareAndLoad() {
@@ -222,5 +230,8 @@ function getCart() {
 function saveCart(shoppingcart) {
     localStorage.setItem("cart", JSON.stringify(shoppingcart));
 }
+
+
+
 
 
