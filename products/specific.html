@@ -6,6 +6,8 @@
     <meta name="content" content="Check out this amazing product we have!">
     <title>Rainydays | Jacket</title>
     <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="stylesheet" href="../src/css/index.css">
+    <link rel="stylesheet" href="../src/css/jackets.css">
     <link rel="stylesheet" href="../src/css/specific.css">
     <link rel="stylesheet" href="../src/css/media.css">
 
@@ -43,7 +45,7 @@
         <div class="menu_item_person">
           <i class="fa-solid fa-user"></i>
         </div>
-        <div class="menu_item_shoppingbag">
+        <div class="menu_item_shoppingbag" id="shoppingbag-icon">
           <i class="fa-solid fa-bag-shopping"></i>
           <span id="cart-count" class="cart-count">0</span>
         </div>
@@ -63,6 +65,16 @@
       </div>
     </header>
     <main>
+      <div class="shoppingcart">
+        <h2 class="shoppingcart-title">Your cart</h2>
+        <div class="shoppingcart-content"></div>
+        <div class="cart-total">
+          <div class="total-title">Total</div>
+          <span class="total-price">0,-</span>
+          <button class="buy-button">Buy Now</button>
+        </div>
+        <i class="fa-solid fa-xmark" id="shoppingcart-close"></i>
+      </div>
       <div id="specific-product">
       </div>
     </main>
