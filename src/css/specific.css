@@ -35,3 +35,15 @@
     border-style: none;
     text-align: center;
 }
+
+.cart-count {
+    position: absolute;
+    top: 17px;
+    right: -10px;
+    background: var(--color-primary);
+    color: var(--color-tertiary);
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+  
