@@ -26,8 +26,16 @@ document.addEventListener("DOMContentLoaded", () => {
             <p>Price: ${item.price}</p>
             <p>Quantity: ${item.quantity}</p>
             <p>Subtotal: ${subtotal.toFixed(2)} kr</p>
+            <i class="fa-solid fa-xmark remove-checkout-item" data-title="${item.title}"></i>
             `;
         summaryContainer.appendChild(itemDiv);
+    });
+
+    document.querySelectorAll(".remove-checkout-item").forEach(icon => {
+        icon.addEventListener("click", () => {
+            const title = icon.dataset.title;
+            removeItemFromCheckout(title);
+        });
     });
 
     totalElement.textContent = `Total: ${total.toFixed(2)} kr`;
@@ -42,3 +50,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
+function removeItemFromCheckout(title) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart = cart.filter(item => item.title !== title);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    location.reload();
+}
