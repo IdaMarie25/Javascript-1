@@ -57,3 +57,6 @@ function removeItemFromCheckout(title) {
     localStorage.setItem("cart", JSON.stringify(cart));
     location.reload();
 }
+
+
+//Checkout success

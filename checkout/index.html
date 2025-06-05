@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="content" content="Check out to buy amazing products from us">
+
+    <script defer src="../js/checkout.js"></script>
+    <script defer src="../js/loader.js"></script>
+
     <title>Rainydays | Checkout</title>
+
     <link rel="stylesheet" href="../src/css/styles.css">
     <link rel="stylesheet" href="../src/css/checkout.css">
     <link rel="stylesheet" href="../src/css/media.css">
@@ -26,11 +31,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/logo.png"/>
 
     <script src="https://kit.fontawesome.com/c4ddc88aa3.js" crossorigin="anonymous"></script>
-    <script defer src="../js/checkout.js"></script>
+    
     
 </head>
 <body>
   <header>
+    <div class="loader"></div>
     <div class="header_section">
       <a href="../index.html"><img src="../assets/images/logo.png" alt="Rainydays logo" class="home_button"/></a>
       <div class="menu_item_searchbar">
@@ -72,7 +78,7 @@
         <section class="checkout_form">
             <h2>Payment & delivery</h2>
 
-            <form class="checkout-form" action="checkoutsuccess.html">
+            <form class="checkout-form" action="/checkout/confirmation/index.html">
                 <h3>Your info</h3>
                 <label for="name">Your name</label>
                 <input type="text" id="name" name="name" title="Enter your full name" placeholder="Name Lastname" required/>
