@@ -32,15 +32,17 @@
 
 .product-item img {
   width: 200px;
-  height: auto;
+  height: 250px;
   max-height: 240px;
   margin: auto;
   display: block;
+  object-fit: cover;
 }
 
 .product-item h3 {
   font-size: var(--medium);
   margin: 10px;
+  height: 40px;
 }
 
 .product-item p {
