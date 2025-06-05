@@ -152,7 +152,7 @@ function renderCartItem(item) {
     <img src="${item.image}"/>
     <div class="shoppingcart-detail"> 
         <h3>${item.title}</h3>
-        <p class="shoppingcart-price">${item.price},-</p>
+        <p class="shoppingcart-price">${item.price}</p>
         <div class="shoppingcart-quantity">
             <button class="minus">-</button>
             <p class="number">${item.quantity}</p>

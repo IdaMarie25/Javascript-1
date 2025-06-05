@@ -25,7 +25,7 @@ async function gettingProduct() {
             <img src="${product.image}" alt="${product.title}"/>
             <h1>${product.title}</h1> 
             <h2>${product.description}</h2>
-            <h3>Price ${product.price} kroner</h3>
+            <h3>Price ${product.price}</h3>
             <button id="add-to-cart-button">Add to Cart</button>
         `;
 

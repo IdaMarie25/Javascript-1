@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
         itemDiv.innerHTML = `
             <img src="${item.image}" alt="${item.title}" class="checkout-image">
             <h3>${item.title}</h3>
-            <p>Price: ${item.price}</p>
-            <p>Quantity: ${item.quantity}</p>
-            <p>Subtotal: ${subtotal.toFixed(2)} kr</p>
+            <p>${item.price}</p>
+            <p>x${item.quantity}</p>
+            <p>Subtotal: ${subtotal.toFixed(2)} kroner</p>
             <i class="fa-solid fa-xmark remove-checkout-item" data-title="${item.title}"></i>
             `;
         summaryContainer.appendChild(itemDiv);
@@ -58,5 +58,3 @@ function removeItemFromCheckout(title) {
     location.reload();
 }
 
-
-//Checkout success

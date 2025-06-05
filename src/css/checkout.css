@@ -33,7 +33,8 @@
 
   .checkout-image {
     height: 80px;
-    width: auto;
+    width: 70px;
+    object-fit: cover;
     margin-right: 20px;
   }
 
@@ -45,10 +46,19 @@
     border-bottom: 1px solid var(--color-tertiary);
   }
 
-  .checkout-item h3, 
+  .checkout-item h3 {
+    margin: 0px;
+    flex: 1;
+    font-size: 13px;
+  
+  }  
+
   .checkout-item p {
     margin: 0px;
     flex: 1;
+    font-size: 11px;
+    text-align: right;
+    padding-right: 7px;
   }
 
   .remove-checkout-item {
@@ -67,7 +77,6 @@
   background-color: var(--color-background);
   border-radius: 10px;
   padding: 30px;
-  max-width: 800px;
   margin: 0 auto 100px auto;
 }
 
@@ -107,3 +116,41 @@
   margin: 0px auto 30px auto;
   padding-top: 20px;
 }
+
+/*Checkout success page*/
+
+.checkout-success {
+  background-image: url(../../assets/images/mountaintop.jpg);
+  min-height: 400px;
+  padding: 20px;
+}
+
+.checkout-success_content {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 35px;
+  border-radius: 10px;
+}
+
+.checkout-success_content i {
+  font-size: 75px;
+  margin-top: 15px;
+}
+
+.checkout-success_content h1 {
+  color: var(--color-tertiary);
+  font-size: 20px;
+}
+
+.checkout-success_content h2 {
+  color: var(--color-tertiary);
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0px 30px 55px 30px;
+}
+
+.checkout-success_content a {
+  text-decoration: none;
+  padding: 14px 60px;
+}
+

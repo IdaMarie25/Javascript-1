@@ -87,7 +87,7 @@
   }
   
   .checkout_form {
-    margin: 180px 20px 0px;
+    margin: 20px;
   }
 }
   
@@ -542,8 +542,9 @@
     margin: 0 auto;
   }
   
-  .checkout_content {
-    margin: 0px 150px;
+  .checkout_content, 
+  .checkout_form {
+    margin: 0px 150px 15px 150px;
   }
   
   .form_1 {
@@ -555,25 +556,14 @@
   }
   
 /*Checkout-success*/
+  .checkout-success {
+    padding: 90px;
+  }
+
   .checkout-success_content {
-    padding: 50px;
-    border-radius: 10px;  
-     
-   }
-   
-   .checkout-success_content h1 {
-     width: 450px;
-   }
-   
-   .checkout-success_content h2 {
-    width: 450px;
-    font-size: var(--large);
-   }
-   
-   .checkout-success_content i {
-    font-size: 60px;
-   }
-   
+      padding: 20px 20px 60px 20px;
+  }
+  
 }
     
   
