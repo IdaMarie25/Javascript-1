@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (buyButton) {
         buyButton.addEventListener("click", () => {
-            window.location.href = "checkout.html";
+            window.location.href = "checkout/index.html";
         });
     };
 });
@@ -75,7 +75,7 @@ function displayProducts(products) {
        productItem.className = 'product-item product-box';
 
        productItem.innerHTML = `
-        <a href="products/specific.html?id=${product.id}">
+        <a href="product/index.html?id=${product.id}">
             <img src="${product.image}" alt="${product.title}"/>
             <h3>${product.title}</h3>
             <p>${product.price} kroner</p>

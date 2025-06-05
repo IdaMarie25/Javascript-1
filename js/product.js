@@ -46,7 +46,7 @@ async function gettingProduct() {
 
     if (buyButton) {
         buyButton.addEventListener("click", () => {
-            window.location.href = "../checkout.html";
+            window.location.href = "../checkout/index.html";
         });
     };
  }
