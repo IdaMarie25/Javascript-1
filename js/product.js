@@ -26,6 +26,8 @@ async function gettingProduct() {
             <h1>${product.title}</h1> 
             <h2>${product.description}</h2>
             <h3>Price ${product.price}</h3>
+            <p>Color: ${product.baseColor}</p>
+            <p>Available sizes: ${product.sizes.join(" ")}</p>
             <button id="add-to-cart-button">Add to Cart</button>
         `;
 
